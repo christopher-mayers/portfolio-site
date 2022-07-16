@@ -8,22 +8,34 @@ import {
 import Home from "./Home";
 import Stuff from "./Stuff";
 import Contact from "./Contact";
+import Game from "./TicTacToe";
 
 class Main extends Component {
     render() {
         return (
             <HashRouter>
                 <div>
-                    <h1>Simple SPA</h1>
+                    <h1>Chris Mayers</h1>
                     <ul className="header">
                         <li>
-                            <NavLink to="/">Home</NavLink>
+                            <NavLink activeClassName="active" to="/">
+                                Home
+                            </NavLink>
                         </li>
                         <li>
-                            <NavLink to="/stuff">Stuff</NavLink>
+                            <NavLink activeClassName="active" to="/stuff">
+                                Stuff
+                            </NavLink>
                         </li>
                         <li>
-                            <NavLink to="/contact">Contact</NavLink>
+                            <NavLink activeClassName="active" to="/contact">
+                                Contact
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink activeClassName="active" to="/game">
+                                Game
+                            </NavLink>
                         </li>
                     </ul>
                     <div className="content">
@@ -31,6 +43,7 @@ class Main extends Component {
                             <Route exact path="/" element={<Home />}/>
                             <Route path="/stuff" element={<Stuff />}/>
                             <Route path="/contact" element={<Contact />}/>
+                            <Route path="/game" element={<Game />}/>
                         </Routes>
                     </div>
                 </div>

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Game from "./TicTacToe";
 
 class Stuff extends Component {
     render() {
