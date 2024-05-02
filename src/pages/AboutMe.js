@@ -1,11 +1,10 @@
 import React, { Component } from "react";
-import Game from "./TicTacToe";
 
-class Stuff extends Component {
+class AboutMe extends Component {
     render() {
         return (
             <div>
-                <h2>Stuff</h2>
+                <h2>About Me</h2>
                 <p>list introduction</p>
 
                 <ol>
@@ -18,4 +17,4 @@ class Stuff extends Component {
     }
 }
 
-export default Stuff;
+export default AboutMe;
